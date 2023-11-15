@@ -33,9 +33,6 @@
 		2D8E9DF42AEFF4BF000E7029 /* FoodrealApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9DF32AEFF4BF000E7029 /* FoodrealApp.swift */; };
 		2D8E9DF82AEFF4C1000E7029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8E9DF72AEFF4C1000E7029 /* Assets.xcassets */; };
 		2D8E9DFB2AEFF4C1000E7029 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8E9DFA2AEFF4C1000E7029 /* Preview Assets.xcassets */; };
-		2D8E9E052AEFF4C1000E7029 /* FoodrealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9E042AEFF4C1000E7029 /* FoodrealTests.swift */; };
-		2D8E9E0F2AEFF4C1000E7029 /* FoodrealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9E0E2AEFF4C1000E7029 /* FoodrealUITests.swift */; };
-		2D8E9E112AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9E102AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,10 +76,7 @@
 		2D8E9DF72AEFF4C1000E7029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D8E9DFA2AEFF4C1000E7029 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D8E9E002AEFF4C1000E7029 /* FoodrealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodrealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D8E9E042AEFF4C1000E7029 /* FoodrealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodrealTests.swift; sourceTree = "<group>"; };
 		2D8E9E0A2AEFF4C1000E7029 /* FoodrealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodrealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D8E9E0E2AEFF4C1000E7029 /* FoodrealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodrealUITests.swift; sourceTree = "<group>"; };
-		2D8E9E102AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodrealUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,8 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				2D8E9DF22AEFF4BF000E7029 /* Foodreal */,
-				2D8E9E032AEFF4C1000E7029 /* FoodrealTests */,
-				2D8E9E0D2AEFF4C1000E7029 /* FoodrealUITests */,
 				2D8E9DF12AEFF4BF000E7029 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -218,23 +210,6 @@
 				2D8E9DFA2AEFF4C1000E7029 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2D8E9E032AEFF4C1000E7029 /* FoodrealTests */ = {
-			isa = PBXGroup;
-			children = (
-				2D8E9E042AEFF4C1000E7029 /* FoodrealTests.swift */,
-			);
-			path = FoodrealTests;
-			sourceTree = "<group>";
-		};
-		2D8E9E0D2AEFF4C1000E7029 /* FoodrealUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2D8E9E0E2AEFF4C1000E7029 /* FoodrealUITests.swift */,
-				2D8E9E102AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift */,
-			);
-			path = FoodrealUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8E9E052AEFF4C1000E7029 /* FoodrealTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,8 +386,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8E9E112AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift in Sources */,
-				2D8E9E0F2AEFF4C1000E7029 /* FoodrealUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
