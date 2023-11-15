@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D7A0DC12B03FC10003D753C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DC02B03FC10003D753C /* Coordinator.swift */; };
+		2D7A0DC32B03FFC3003D753C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DC22B03FFC3003D753C /* LoginView.swift */; };
+		2D7A0DC52B03FFDE003D753C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DC42B03FFDE003D753C /* OnboardingView.swift */; };
+		2D7A0DC72B03FFEB003D753C /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DC62B03FFEB003D753C /* HomePageView.swift */; };
+		2D7A0DC92B0400A2003D753C /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DC82B0400A2003D753C /* FoodView.swift */; };
+		2D7A0DCB2B0400B9003D753C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DCA2B0400B9003D753C /* SettingsView.swift */; };
+		2D7A0DCD2B0400C5003D753C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DCC2B0400C5003D753C /* AccountView.swift */; };
+		2D7A0DCF2B0400CE003D753C /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DCE2B0400CE003D753C /* AboutView.swift */; };
+		2D7A0DD12B0400E3003D753C /* PrivacyAndTermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DD02B0400E3003D753C /* PrivacyAndTermsView.swift */; };
+		2D7A0DD32B04012C003D753C /* CreateReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DD22B04012C003D753C /* CreateReviewView.swift */; };
+		2D7A0DD52B040677003D753C /* ExampleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DD42B040677003D753C /* ExampleSheetView.swift */; };
+		2D7A0DD72B0406BD003D753C /* ExmpleFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DD62B0406BD003D753C /* ExmpleFullScreenView.swift */; };
+		2D7A0DD92B04075C003D753C /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DD82B04075C003D753C /* CoordinatorView.swift */; };
+		2D7A0DDB2B04379B003D753C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DDA2B04379B003D753C /* ContentView.swift */; };
+		2D7A0DDD2B04513D003D753C /* UIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DDC2B04513D003D753C /* UIElements.swift */; };
+		2D7A0DE12B045BB1003D753C /* UserAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0DE02B045BB1003D753C /* UserAuthModel.swift */; };
+		2D7A0DE32B045C3F003D753C /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7A0DE22B045C3F003D753C /* GoogleSignIn */; };
+		2D7A0DE52B045C3F003D753C /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7A0DE42B045C3F003D753C /* GoogleSignInSwift */; };
+		2D7A0DE82B05292F003D753C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7A0DE72B05292F003D753C /* FirebaseAnalytics */; };
+		2D7A0DEA2B05292F003D753C /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7A0DE92B05292F003D753C /* FirebaseAnalyticsSwift */; };
+		2D7A0DEC2B05292F003D753C /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7A0DEB2B05292F003D753C /* FirebaseAppCheck */; };
+		2D7A0DEE2B05292F003D753C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7A0DED2B05292F003D753C /* FirebaseAuth */; };
+		2D7A0DFF2B05732D003D753C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D7A0DFE2B05732D003D753C /* GoogleService-Info.plist */; };
+		2D8E9DF42AEFF4BF000E7029 /* FoodrealApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9DF32AEFF4BF000E7029 /* FoodrealApp.swift */; };
+		2D8E9DF82AEFF4C1000E7029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8E9DF72AEFF4C1000E7029 /* Assets.xcassets */; };
+		2D8E9DFB2AEFF4C1000E7029 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8E9DFA2AEFF4C1000E7029 /* Preview Assets.xcassets */; };
+		2D8E9E052AEFF4C1000E7029 /* FoodrealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9E042AEFF4C1000E7029 /* FoodrealTests.swift */; };
+		2D8E9E0F2AEFF4C1000E7029 /* FoodrealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9E0E2AEFF4C1000E7029 /* FoodrealUITests.swift */; };
+		2D8E9E112AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E9E102AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D8E9E012AEFF4C1000E7029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D8E9DE82AEFF4BF000E7029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D8E9DEF2AEFF4BF000E7029;
+			remoteInfo = Foodreal;
+		};
+		2D8E9E0B2AEFF4C1000E7029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D8E9DE82AEFF4BF000E7029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D8E9DEF2AEFF4BF000E7029;
+			remoteInfo = Foodreal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D7A0DC02B03FC10003D753C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2D7A0DC22B03FFC3003D753C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2D7A0DC42B03FFDE003D753C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2D7A0DC62B03FFEB003D753C /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		2D7A0DC82B0400A2003D753C /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		2D7A0DCA2B0400B9003D753C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2D7A0DCC2B0400C5003D753C /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		2D7A0DCE2B0400CE003D753C /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		2D7A0DD02B0400E3003D753C /* PrivacyAndTermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyAndTermsView.swift; sourceTree = "<group>"; };
+		2D7A0DD22B04012C003D753C /* CreateReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewView.swift; sourceTree = "<group>"; };
+		2D7A0DD42B040677003D753C /* ExampleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSheetView.swift; sourceTree = "<group>"; };
+		2D7A0DD62B0406BD003D753C /* ExmpleFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExmpleFullScreenView.swift; sourceTree = "<group>"; };
+		2D7A0DD82B04075C003D753C /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		2D7A0DDA2B04379B003D753C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2D7A0DDC2B04513D003D753C /* UIElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElements.swift; sourceTree = "<group>"; };
+		2D7A0DDF2B045B6E003D753C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7A0DE02B045BB1003D753C /* UserAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthModel.swift; sourceTree = "<group>"; };
+		2D7A0DFE2B05732D003D753C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D8E9DF02AEFF4BF000E7029 /* Foodreal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodreal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8E9DF32AEFF4BF000E7029 /* FoodrealApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodrealApp.swift; sourceTree = "<group>"; };
+		2D8E9DF72AEFF4C1000E7029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D8E9DFA2AEFF4C1000E7029 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D8E9E002AEFF4C1000E7029 /* FoodrealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodrealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8E9E042AEFF4C1000E7029 /* FoodrealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodrealTests.swift; sourceTree = "<group>"; };
+		2D8E9E0A2AEFF4C1000E7029 /* FoodrealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodrealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8E9E0E2AEFF4C1000E7029 /* FoodrealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodrealUITests.swift; sourceTree = "<group>"; };
+		2D8E9E102AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodrealUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D8E9DED2AEFF4BF000E7029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A0DEA2B05292F003D753C /* FirebaseAnalyticsSwift in Frameworks */,
+				2D7A0DEE2B05292F003D753C /* FirebaseAuth in Frameworks */,
+				2D7A0DE32B045C3F003D753C /* GoogleSignIn in Frameworks */,
+				2D7A0DE52B045C3F003D753C /* GoogleSignInSwift in Frameworks */,
+				2D7A0DEC2B05292F003D753C /* FirebaseAppCheck in Frameworks */,
+				2D7A0DE82B05292F003D753C /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8E9DFD2AEFF4C1000E7029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8E9E072AEFF4C1000E7029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D7A0DF12B052A33003D753C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A0DF52B052BD2003D753C /* Shared */,
+				2D7A0DF42B052B61003D753C /* Examples */,
+				2D7A0DF32B052B14003D753C /* Navigation */,
+				2D7A0DF22B052B03003D753C /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D7A0DF22B052B03003D753C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A0DC22B03FFC3003D753C /* LoginView.swift */,
+				2D7A0DC42B03FFDE003D753C /* OnboardingView.swift */,
+				2D7A0DC62B03FFEB003D753C /* HomePageView.swift */,
+				2D7A0DC82B0400A2003D753C /* FoodView.swift */,
+				2D7A0DCA2B0400B9003D753C /* SettingsView.swift */,
+				2D7A0DCC2B0400C5003D753C /* AccountView.swift */,
+				2D7A0DCE2B0400CE003D753C /* AboutView.swift */,
+				2D7A0DD02B0400E3003D753C /* PrivacyAndTermsView.swift */,
+				2D7A0DD22B04012C003D753C /* CreateReviewView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2D7A0DF32B052B14003D753C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A0DD82B04075C003D753C /* CoordinatorView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2D7A0DF42B052B61003D753C /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A0DD42B040677003D753C /* ExampleSheetView.swift */,
+				2D7A0DD62B0406BD003D753C /* ExmpleFullScreenView.swift */,
+				2D7A0DDA2B04379B003D753C /* ContentView.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		2D7A0DF52B052BD2003D753C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A0DDC2B04513D003D753C /* UIElements.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2D7A0DF72B052CD7003D753C /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A0DC02B03FC10003D753C /* Coordinator.swift */,
+				2D7A0DE02B045BB1003D753C /* UserAuthModel.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		2D8E9DE72AEFF4BF000E7029 = {
+			isa = PBXGroup;
+			children = (
+				2D8E9DF22AEFF4BF000E7029 /* Foodreal */,
+				2D8E9E032AEFF4C1000E7029 /* FoodrealTests */,
+				2D8E9E0D2AEFF4C1000E7029 /* FoodrealUITests */,
+				2D8E9DF12AEFF4BF000E7029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D8E9DF12AEFF4BF000E7029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E9DF02AEFF4BF000E7029 /* Foodreal.app */,
+				2D8E9E002AEFF4C1000E7029 /* FoodrealTests.xctest */,
+				2D8E9E0A2AEFF4C1000E7029 /* FoodrealUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D8E9DF22AEFF4BF000E7029 /* Foodreal */ = {
+			isa = PBXGroup;
+			children = (
+				2D7A0DFE2B05732D003D753C /* GoogleService-Info.plist */,
+				2D7A0DDF2B045B6E003D753C /* Info.plist */,
+				2D7A0DF72B052CD7003D753C /* Stores */,
+				2D7A0DF12B052A33003D753C /* Views */,
+				2D8E9DF32AEFF4BF000E7029 /* FoodrealApp.swift */,
+				2D8E9DF72AEFF4C1000E7029 /* Assets.xcassets */,
+				2D8E9DF92AEFF4C1000E7029 /* Preview Content */,
+			);
+			path = Foodreal;
+			sourceTree = "<group>";
+		};
+		2D8E9DF92AEFF4C1000E7029 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E9DFA2AEFF4C1000E7029 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D8E9E032AEFF4C1000E7029 /* FoodrealTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E9E042AEFF4C1000E7029 /* FoodrealTests.swift */,
+			);
+			path = FoodrealTests;
+			sourceTree = "<group>";
+		};
+		2D8E9E0D2AEFF4C1000E7029 /* FoodrealUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E9E0E2AEFF4C1000E7029 /* FoodrealUITests.swift */,
+				2D8E9E102AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift */,
+			);
+			path = FoodrealUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D8E9DEF2AEFF4BF000E7029 /* Foodreal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D8E9E142AEFF4C1000E7029 /* Build configuration list for PBXNativeTarget "Foodreal" */;
+			buildPhases = (
+				2D8E9DEC2AEFF4BF000E7029 /* Sources */,
+				2D8E9DED2AEFF4BF000E7029 /* Frameworks */,
+				2D8E9DEE2AEFF4BF000E7029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foodreal;
+			packageProductDependencies = (
+				2D7A0DE22B045C3F003D753C /* GoogleSignIn */,
+				2D7A0DE42B045C3F003D753C /* GoogleSignInSwift */,
+				2D7A0DE72B05292F003D753C /* FirebaseAnalytics */,
+				2D7A0DE92B05292F003D753C /* FirebaseAnalyticsSwift */,
+				2D7A0DEB2B05292F003D753C /* FirebaseAppCheck */,
+				2D7A0DED2B05292F003D753C /* FirebaseAuth */,
+			);
+			productName = Foodreal;
+			productReference = 2D8E9DF02AEFF4BF000E7029 /* Foodreal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D8E9DFF2AEFF4C1000E7029 /* FoodrealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D8E9E172AEFF4C1000E7029 /* Build configuration list for PBXNativeTarget "FoodrealTests" */;
+			buildPhases = (
+				2D8E9DFC2AEFF4C1000E7029 /* Sources */,
+				2D8E9DFD2AEFF4C1000E7029 /* Frameworks */,
+				2D8E9DFE2AEFF4C1000E7029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D8E9E022AEFF4C1000E7029 /* PBXTargetDependency */,
+			);
+			name = FoodrealTests;
+			productName = FoodrealTests;
+			productReference = 2D8E9E002AEFF4C1000E7029 /* FoodrealTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D8E9E092AEFF4C1000E7029 /* FoodrealUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D8E9E1A2AEFF4C1000E7029 /* Build configuration list for PBXNativeTarget "FoodrealUITests" */;
+			buildPhases = (
+				2D8E9E062AEFF4C1000E7029 /* Sources */,
+				2D8E9E072AEFF4C1000E7029 /* Frameworks */,
+				2D8E9E082AEFF4C1000E7029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D8E9E0C2AEFF4C1000E7029 /* PBXTargetDependency */,
+			);
+			name = FoodrealUITests;
+			productName = FoodrealUITests;
+			productReference = 2D8E9E0A2AEFF4C1000E7029 /* FoodrealUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D8E9DE82AEFF4BF000E7029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2D8E9DEF2AEFF4BF000E7029 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					2D8E9DFF2AEFF4C1000E7029 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 2D8E9DEF2AEFF4BF000E7029;
+					};
+					2D8E9E092AEFF4C1000E7029 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 2D8E9DEF2AEFF4BF000E7029;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E9DEB2AEFF4BF000E7029 /* Build configuration list for PBXProject "Foodreal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D8E9DE72AEFF4BF000E7029;
+			packageReferences = (
+				2D7A0DDE2B04581C003D753C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				2D7A0DE62B05292F003D753C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 2D8E9DF12AEFF4BF000E7029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D8E9DEF2AEFF4BF000E7029 /* Foodreal */,
+				2D8E9DFF2AEFF4C1000E7029 /* FoodrealTests */,
+				2D8E9E092AEFF4C1000E7029 /* FoodrealUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D8E9DEE2AEFF4BF000E7029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8E9DFB2AEFF4C1000E7029 /* Preview Assets.xcassets in Resources */,
+				2D8E9DF82AEFF4C1000E7029 /* Assets.xcassets in Resources */,
+				2D7A0DFF2B05732D003D753C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8E9DFE2AEFF4C1000E7029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8E9E082AEFF4C1000E7029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D8E9DEC2AEFF4BF000E7029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7A0DD92B04075C003D753C /* CoordinatorView.swift in Sources */,
+				2D7A0DD52B040677003D753C /* ExampleSheetView.swift in Sources */,
+				2D7A0DCB2B0400B9003D753C /* SettingsView.swift in Sources */,
+				2D8E9DF42AEFF4BF000E7029 /* FoodrealApp.swift in Sources */,
+				2D7A0DC92B0400A2003D753C /* FoodView.swift in Sources */,
+				2D7A0DCF2B0400CE003D753C /* AboutView.swift in Sources */,
+				2D7A0DDD2B04513D003D753C /* UIElements.swift in Sources */,
+				2D7A0DC32B03FFC3003D753C /* LoginView.swift in Sources */,
+				2D7A0DC52B03FFDE003D753C /* OnboardingView.swift in Sources */,
+				2D7A0DCD2B0400C5003D753C /* AccountView.swift in Sources */,
+				2D7A0DD12B0400E3003D753C /* PrivacyAndTermsView.swift in Sources */,
+				2D7A0DC72B03FFEB003D753C /* HomePageView.swift in Sources */,
+				2D7A0DE12B045BB1003D753C /* UserAuthModel.swift in Sources */,
+				2D7A0DDB2B04379B003D753C /* ContentView.swift in Sources */,
+				2D7A0DD32B04012C003D753C /* CreateReviewView.swift in Sources */,
+				2D7A0DD72B0406BD003D753C /* ExmpleFullScreenView.swift in Sources */,
+				2D7A0DC12B03FC10003D753C /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8E9DFC2AEFF4C1000E7029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8E9E052AEFF4C1000E7029 /* FoodrealTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D8E9E062AEFF4C1000E7029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8E9E112AEFF4C1000E7029 /* FoodrealUITestsLaunchTests.swift in Sources */,
+				2D8E9E0F2AEFF4C1000E7029 /* FoodrealUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D8E9E022AEFF4C1000E7029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D8E9DEF2AEFF4BF000E7029 /* Foodreal */;
+			targetProxy = 2D8E9E012AEFF4C1000E7029 /* PBXContainerItemProxy */;
+		};
+		2D8E9E0C2AEFF4C1000E7029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D8E9DEF2AEFF4BF000E7029 /* Foodreal */;
+			targetProxy = 2D8E9E0B2AEFF4C1000E7029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D8E9E122AEFF4C1000E7029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D8E9E132AEFF4C1000E7029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D8E9E152AEFF4C1000E7029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Foodreal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Foodreal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elipeter.Foodreal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D8E9E162AEFF4C1000E7029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Foodreal/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Foodreal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elipeter.Foodreal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D8E9E182AEFF4C1000E7029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elipeter.FoodrealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodreal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Foodreal";
+			};
+			name = Debug;
+		};
+		2D8E9E192AEFF4C1000E7029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elipeter.FoodrealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodreal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Foodreal";
+			};
+			name = Release;
+		};
+		2D8E9E1B2AEFF4C1000E7029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elipeter.FoodrealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Foodreal;
+			};
+			name = Debug;
+		};
+		2D8E9E1C2AEFF4C1000E7029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elipeter.FoodrealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Foodreal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E9DEB2AEFF4BF000E7029 /* Build configuration list for PBXProject "Foodreal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8E9E122AEFF4C1000E7029 /* Debug */,
+				2D8E9E132AEFF4C1000E7029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E9E142AEFF4C1000E7029 /* Build configuration list for PBXNativeTarget "Foodreal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8E9E152AEFF4C1000E7029 /* Debug */,
+				2D8E9E162AEFF4C1000E7029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E9E172AEFF4C1000E7029 /* Build configuration list for PBXNativeTarget "FoodrealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8E9E182AEFF4C1000E7029 /* Debug */,
+				2D8E9E192AEFF4C1000E7029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E9E1A2AEFF4C1000E7029 /* Build configuration list for PBXNativeTarget "FoodrealUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8E9E1B2AEFF4C1000E7029 /* Debug */,
+				2D8E9E1C2AEFF4C1000E7029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D7A0DDE2B04581C003D753C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		2D7A0DE62B05292F003D753C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D7A0DE22B045C3F003D753C /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7A0DDE2B04581C003D753C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		2D7A0DE42B045C3F003D753C /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7A0DDE2B04581C003D753C /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		2D7A0DE72B05292F003D753C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7A0DE62B05292F003D753C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		2D7A0DE92B05292F003D753C /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7A0DE62B05292F003D753C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		2D7A0DEB2B05292F003D753C /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7A0DE62B05292F003D753C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		2D7A0DED2B05292F003D753C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7A0DE62B05292F003D753C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2D8E9DE82AEFF4BF000E7029 /* Project object */;
+}
