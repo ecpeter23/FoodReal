@@ -1,10 +1,8 @@
 from bs4 import BeautifulSoup  # For parsing HTML
 from datetime import date  # For getting the current date
 import requests  # For making HTTP requests
-import json  # For JSON parsing and formatting
 import firebase_admin  # For Firebase administration
-from firebase_admin import credentials  # For handling Firebase credentials
-from firebase_admin import firestore  # For Firestore operations
+from firebase_admin import credentials, firestone  # For handling Firebase credentials & operations
 from enum import Enum  # For creating enumeration types
 
 # Enum class to represent different meal times
@@ -45,11 +43,30 @@ def extract_meal_data(menu, titles):
     return {title: extract_food_items(menu[i]) for i, title in enumerate(titles)}
 
 # Function to initialize Firebase with credentials
-def initialize_firebase(cred_path):
+def initialize_firebase(data):
     # Loading credentials from a file
-    cred = credentials.Certificate(cred_path)
-    # Initializing the Firebase app with the loaded credentials
-    firebase_admin.initialize_app(cred)
+    cred = credentials.Certificate("api key")
+    # Initializing the Firebase app with the loaded credentials and database
+    firebase_admin.initialize_app(cred,
+                                  {
+                                      "databaseURL": "https://FoodReal.firebaseio.com /"
+                                  })
+    db = firestore.client()
+    doc_ref = db.collection(u"current-foods")
+
+    # Format the current date as a string to use as the document ID
+    current_date = date.today().isoformat()
+    doc_id = current_date
+
+    # Check if a document with the current date already exists
+    existing_doc = doc_ref.document(doc_id).get()
+    if existing_doc.exists:
+        print(f"Document for {current_date} already exists.")
+        return 1
+
+    # Add a new document with the current date as its ID
+    doc_ref.document(doc_id).set(data)
+    print(f"Added new document for {current_date}.")
 
 # Main function
 def main():
@@ -68,10 +85,10 @@ def main():
         data[meal_str.capitalize()] = extract_meal_data(sections, titles)
 
     # Initializing Firebase
-    # initialize_firebase("api key")
+    initialize_firebase(data)
     
     # Printing the extracted data in JSON format
-    print(json.dumps(data, indent=2))
+    print(data)
 
 # Checking if the script is the main program and running the main function
 if __name__ == "__main__":
