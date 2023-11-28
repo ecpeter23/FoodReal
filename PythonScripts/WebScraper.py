@@ -55,18 +55,24 @@ def initialize_firebase(data):
     doc_ref = db.collection(u"current-foods")
 
     # Format the current date as a string to use as the document ID
-    current_date = date.today().isoformat()
-    doc_id = current_date
+    doc_id = date.today().isoformat()
+    previous_doc_id = (date.today() - timedelta(days=1)).isoformat()
+
+    # Check and delete the previous day's document
+    previous_doc = doc_ref.document(previous_doc_id).get()
+    if previous_doc.exists:
+        doc_ref.document(previous_doc_id).delete()
+        print(f"Deleted document for {previous_doc_id}.")
 
     # Check if a document with the current date already exists
     existing_doc = doc_ref.document(doc_id).get()
     if existing_doc.exists:
-        print(f"Document for {current_date} already exists.")
+        print(f"Document for {doc_id} already exists.")
         return 1
 
     # Add a new document with the current date as its ID
     doc_ref.document(doc_id).set(data)
-    print(f"Added new document for {current_date}.")
+    print(f"Added new document for {doc_id}.")
 
 # Main function
 def main():
